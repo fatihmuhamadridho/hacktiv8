@@ -1,0 +1,23 @@
+.navbar--container {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    border-bottom: 1px solid #D8D9DA;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar--container ul {
+    padding: 20px 52px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar--container ul li {
+    margin-left: 20px;
+    list-style: none;
+    filter: none;
+}
+
+.navbar--container ul li a {
+    color: black;
+}

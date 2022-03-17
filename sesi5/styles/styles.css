@@ -1,0 +1,14 @@
+/* Navbar */
+@import "./navbar.css";
+
+/* Views Homepage */
+@import "./views/homepage/homepage.css";
+@import "./views/homepage/header.css";
+@import "./views/homepage/form.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}

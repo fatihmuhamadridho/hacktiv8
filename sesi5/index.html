@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <nav class="navbar--container">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">GALERY</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">MY INVENTORY</a></li>
+        </ul>
+    </nav>
+    <div class="homepage--container">
+        <div class="homepage--container-header">
+            <img src="./images/person.png" alt="" width="190px" height="190px">
+            <div class="homepage--container-header-profile">
+                <div class="homepage--container-header-profile-main">
+                    <h1 id="name">Fatih Muhamad Ridho</h1>
+                    <p id="role">Front End Developer</p>
+                    <div>
+                        <button onclick="window.open('https://wa.me/+6282110797472','_blank')">Kontak</button>
+                        <button onclick="window.open('https://drive.google.com/file/d/1Rvud7MGSPXEpW3bHySXO2j_4yWjdGjbZ/view?usp=sharing','_blank')">Resume</button>
+                    </div>
+                </div>
+                <span class="homepage--container-header-profile-vl"></span>
+                <div class="homepage--container-header-profile-details">
+                    <ul>
+                        <li>Availability</li>
+                        <li>Usia</li>
+                        <li>Lokasi</li>
+                        <li>Pengalaman</li>
+                        <li>Email</li>
+                    </ul>
+                    <ul>
+                        <li id="availability">Full Time</li>
+                        <li id="age">20</li>
+                        <li id="address">Tangerang, Indonesia</li>
+                        <li id="experience">2</li>
+                        <li id="email">fatihmuhamadridho1@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <form class="homepage--container-form">
+            <div class="homepage--container-form-input">
+                <label for="">Nama</label>
+                <input id="form_name" type="text" placeholder="your name..">
+            </div>
+            <div class="homepage--container-form-input">
+                <label for="">Role</label>
+                <input id="form_role" type="text" placeholder="your role..">
+            </div>
+            <div class="homepage--container-form-input">
+                <label for="">Availability</label>
+                <input id="form_availability" type="text" placeholder="your availability..">
+            </div>
+            <div class="homepage--container-form-input">
+                <label for="">Age</label>
+                <input id="form_age" type="text" placeholder="your age..">
+            </div>
+            <div class="homepage--container-form-input">
+                <label for="">Lokasi</label>
+                <input id="form_address" type="text" placeholder="your location..">
+            </div>
+            <div class="homepage--container-form-input">
+                <label for="">Yours Experience</label>
+                <input id="form_experience" type="text" placeholder="your experience..">
+            </div>
+            <div class="homepage--container-form-input">
+                <label for="">Email</label>
+                <input id="form_email" type="text" placeholder="your email..">
+            </div>
+            <button type="button" onclick="myFunction()">Submit</button>
+        </form>
+    </div>
+    <script>
+        function myFunction(e) {
+            document.querySelector("#name").innerHTML = document.getElementById('form_name').value !== '' ? document.getElementById('form_name').value : document.querySelector('#name').innerHTML
+            document.querySelector("#role").innerHTML = document.getElementById('form_role').value !== '' ? document.getElementById('form_role').value : document.querySelector('#role').innerHTML
+            document.querySelector("#availability").innerHTML = document.getElementById('form_availability').value !== '' ? document.getElementById('form_availability').value : document.querySelector('#availability').innerHTML
+            document.querySelector("#age").innerHTML = document.getElementById('form_age').value !== '' ? document.getElementById('form_age').value : document.querySelector('#age').innerHTML
+            document.querySelector("#address").innerHTML = document.getElementById('form_address').value !== '' ? document.getElementById('form_address').value : document.querySelector('#address').innerHTML
+            document.querySelector("#experience").innerHTML = document.getElementById('form_experience').value !== '' ? document.getElementById('form_experience').value : document.querySelector('#experience').innerHTML
+            document.querySelector("#email").innerHTML = document.getElementById('form_email').value !== '' ? document.getElementById('form_email').value : document.querySelector('#email').innerHTML
+        }
+    </script>
+</body>
+</html>
