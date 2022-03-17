@@ -1,0 +1,35 @@
+.homepage--container-form {
+    margin-top: 20px;
+    background-color: white;
+    font-size: 18px;
+}
+
+.homepage--container-form-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.homepage--container-form-input:first-child {
+    margin-top: 0px;
+}
+
+.homepage--container-form-input label {
+    font-weight: bold;
+}
+
+.homepage--container-form-input input {
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.homepage--container-form button {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
