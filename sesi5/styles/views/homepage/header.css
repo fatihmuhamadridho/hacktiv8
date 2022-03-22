@@ -25,7 +25,7 @@
     font-size: 18px;
 }
 
-.homepage--container-header-profile-main button {
+.homepage--container-header-profile-main-btn button {
     margin-top: 30px;
     padding: 16px 28px;
     font-weight: bold;
@@ -34,8 +34,7 @@
     color: #668b44;
 }
 
-.homepage--container-header-profile-main button:first-child {
-    padding: 16px 28px;
+.homepage--container-header-profile-main-btn button:first-child {
     background-color: #0000EE;
     color: white;
 }
@@ -58,4 +57,83 @@
     list-style: none;
     margin-bottom: 10px;
     font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .homepage--container-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homepage--container-header img {
+        width: 25%;
+        height: 25%;
+        border-radius: 100%;
+    }
+
+    .homepage--container-header-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homepage--container-header-profile-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .homepage--container-header-profile-vl {
+        display: none;
+    }
+
+    .homepage--container-header-profile-hr {
+        width: 100%;
+        margin-bottom: 15px;
+        border: 1px solid black;
+    }
+
+    .homepage--container-header-profile-main-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .homepage--container-header-profile-main-btn button {
+        margin: 15px;
+        padding: 14px 20px;
+    }
+
+    .homepage--container-header-profile-details ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    .homepage--container-header-profile-main {
+        margin-top: 10px;
+    }
+
+    .homepage--container-header-profile-main h1 {
+        font-size: 18px;
+    }
+
+    .homepage--container-header-profile-main p {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .homepage--container-header-profile-main-btn button {
+        margin: 10px 5px;
+        padding: 10px 16px;
+    }
+
+    .homepage--container-header-profile-details ul:first-child {
+        margin: 0px 20px 0px 0px;
+    }
+
+    .homepage--container-header-profile-details ul li {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
 }

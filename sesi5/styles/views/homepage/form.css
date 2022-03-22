@@ -33,3 +33,11 @@
     color: white;
     font-weight: bold;
 }
+
+@media (max-width: 360px) {
+    .homepage--container-form {
+        margin-top: 20px;
+        background-color: white;
+        font-size: 12px;
+    }
+}

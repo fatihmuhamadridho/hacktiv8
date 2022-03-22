@@ -21,3 +21,9 @@
 .navbar--container ul li a {
     color: black;
 }
+
+@media (max-width: 360px) {
+    .navbar--container ul li a {
+        font-size: 10px;
+    }
+}
